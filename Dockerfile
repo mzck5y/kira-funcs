@@ -25,4 +25,4 @@ ENV FUNCTION_METRICS_ENDPONT="/metrics"
 
 EXPOSE 80
 
-ENTRYPOINT ["./kira.functions.createprovider.dll"]
+ENTRYPOINT ["./kira.functions.createprovider"]
