@@ -1,5 +1,5 @@
-# kira-faas-sample-funcs
-Some sample functions that will run on the KIRA FaaS runtime.
+# Function my-first-function
+my-first-function Is the responsable to [INSERT BUSINESS FUNCTIONALITY] 
 
 ## To run this function 
 ```
