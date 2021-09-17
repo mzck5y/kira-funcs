@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cars-api-deployment
+  name: cars-function-deployment
   namespace: onicloud
   labels:
     app: cars
