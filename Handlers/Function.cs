@@ -16,7 +16,7 @@ namespace Kira.FaaS.Sample.Funcs
         {
             string name = ctx.Request.Query["name"];
             ctx.Response.StatusCode = (int)HttpStatusCode.OK;
-            await ctx.Response.WriteAsync($"Hello {name}");
+            await ctx.Response.WriteAsync($"Hello my good frind {name}");
         }
 
         #endregion
