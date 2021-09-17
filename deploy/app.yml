@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-first-function
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/mzck5y/kira-funcs.git
+    targetRevision: HEAD
+    path: deploy/function-deploy.yml
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: onicloud
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
