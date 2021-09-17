@@ -8,9 +8,7 @@ spec:
   source:
     repoURL: https://github.com/mzck5y/kira-funcs.git
     targetRevision: HEAD
-    path: deploy/function-deploy.yml
-    directory:
-      recurse: true
+    path: deploy
   destination:
     server: https://kubernetes.default.svc
     namespace: onicloud
